@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 5px;
+    padding: 5px;
+    background-color: #0F0F0F;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+label {
+    padding: 5px;
+}
+
+select {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    background-color: #272727;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border:none;
+    outline: none;
+    font-size: medium;
+    transition: 0.5s;
+}
+
+select:hover{
+    background-color: #5a5858;
+    border:none;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+input {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    background-color: #272727;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border:none;
+    outline: none;
+    font-size: medium;
+    transition: 0.5s;
+}
+
+input:focus {
+    background-color: #5a5858;
+    border:none;
+    transition: 0.5s;
+}
+
+button {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    border:none;
+    background-color: #272727;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #5a5858;
+    transition: 0.5s;
+}
+
+.app {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #272727;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+}
+
+.app h2{
+    font-size: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.app:hover {
+    background-color: #5a5858;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.appimg {
+    margin-top: 5px;
+    border-radius: 25px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.appgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    aspect-ratio: 1 / 1;
+    transition: 0.5s;
+}
+
+.hideme {
+  display: none;
+  transition: 0.5s;
+}
