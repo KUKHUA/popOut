@@ -12,27 +12,38 @@ const config = [
     },
 
     {
-        "id": 6,
+        "id": 3,
         "title": "Desmos 4-Function Calculator",
         "url": "https://www.desmos.com/fourfunction"
     },
 
     {  
-        "id": 3,
+        "id": 4,
         "title": "Desmos Matrix",
         "url": "https://www.desmos.com/matrix"
     },
 
     {
-        "id": 4,
+        "id": 5,
         "title": "Desmos 3D",
         "url": "https://www.desmos.com/3d"
     },
 
     {
-        "id": 5,
+        "id": 6,
         "title": "Desmos Geometry",
         "url": "https://www.desmos.com/geometry"
+    },
+
+    {
+        "id": 7,
+        "title": "Google",
+        "url": "https://www.google.com/?igu=1"
+    },
+    {
+        "id": 8,
+        "title": "Radiolise",
+        "url": "https://radiolise.gitlab.io/"
     }
 ];
 
@@ -73,7 +84,10 @@ function openPIP() {
     }
 }
 
-function startUp(){;
+function startUp(){
+    if (!documentPictureInPicture) {
+        alert("Picture-in-Picture is probably not supported in your browser. Chrome/Edge 116+, or Opera 102+ is required.");
+    }
     selector = document.getElementById("cal");
     for(desmosConfigs in config){
         let newItem = document.createElement("option");
